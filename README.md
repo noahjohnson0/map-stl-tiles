@@ -1,11 +1,14 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo-dark.png">
-    <img src="docs/assets/logo-light.png" alt="map-stl-tiles" width="200">
-  </picture>
-</p>
-
-# Map STL Tiles
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="220" valign="middle">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo-dark.png">
+<img src="docs/assets/logo-light.png" alt="map-stl-tiles" width="200">
+</picture>
+</td>
+<td valign="middle"><h1>M&nbsp;A&nbsp;P &nbsp; S&nbsp;T&nbsp;L &nbsp; T&nbsp;I&nbsp;L&nbsp;E&nbsp;S</h1></td>
+</tr>
+</table>
 
 Next.js app: pan/zoom an OpenStreetMap view, pick a square area, download a binary STL of the terrain ready to 3D print.
 
