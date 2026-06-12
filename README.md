@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/logo.png" alt="map-stl-tiles" width="200">
+</p>
+
 # Map STL Tiles
 
 Next.js app: pan/zoom an OpenStreetMap view, pick a square area, download a binary STL of the terrain ready to 3D print.
@@ -28,3 +32,7 @@ Open http://localhost:3000.
 
 - Map: © OpenStreetMap contributors
 - Elevation: AWS Terrain Tiles (Mapzen Terrarium)
+
+## Screenshot
+
+![map-stl-tiles screenshot](docs/assets/screenshot.png)
