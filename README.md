@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="docs/assets/logo.png" alt="map-stl-tiles" width="200">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo-dark.png">
+    <img src="docs/assets/logo-light.png" alt="map-stl-tiles" width="200">
+  </picture>
 </p>
 
 # Map STL Tiles
