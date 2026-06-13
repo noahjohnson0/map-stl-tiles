@@ -6,3 +6,6 @@ out/
 *.log
 .vercel
 next-env.d.ts
+
+# TypeScript build cache
+tsconfig.tsbuildinfo

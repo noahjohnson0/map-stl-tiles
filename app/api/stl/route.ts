@@ -8,12 +8,17 @@ export const maxDuration = 60;
 
 type BBox = { west: number; south: number; east: number; north: number };
 
+function clamp(v: number, lo: number, hi: number): number {
+  return v < lo ? lo : v > hi ? hi : v;
+}
+
 export async function POST(req: NextRequest) {
   let body: {
     bbox: BBox;
     heightMm: number;
     baseMm: number;
     zExaggeration: number;
+    gridSize?: number;
   };
   try {
     body = await req.json();
@@ -26,7 +31,8 @@ export async function POST(req: NextRequest) {
     return new Response("Invalid bbox", { status: 400 });
   }
 
-  const gridSize = 200;
+  // Callers send a low grid for the live preview and the full grid for download.
+  const gridSize = Math.round(clamp(body.gridSize ?? 300, 40, 400));
   try {
     const heightmap = await buildHeightmap(bbox, gridSize, fetchTerrarium);
     const stl = heightmapToSTL(heightmap, {

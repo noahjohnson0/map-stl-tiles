@@ -10,6 +10,8 @@
 </tr>
 </table>
 
+**Live: https://map-stl-tiles.vercel.app**
+
 Next.js app: pan/zoom an OpenStreetMap view, pick a square area, download a binary STL of the terrain ready to 3D print.
 
 ## How it works
